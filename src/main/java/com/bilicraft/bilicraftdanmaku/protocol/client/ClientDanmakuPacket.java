@@ -18,6 +18,6 @@ public class ClientDanmakuPacket extends Packet {
     private long lifespan;
     private boolean showName;
     private UUID sender;
-    private String senderDisplayName;
+    private String playerName;
     private String jsonText;
 }
