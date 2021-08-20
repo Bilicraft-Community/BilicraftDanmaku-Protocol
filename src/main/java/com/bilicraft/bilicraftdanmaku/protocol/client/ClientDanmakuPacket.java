@@ -15,6 +15,7 @@ import java.util.UUID;
 @Data
 public class ClientDanmakuPacket extends Packet {
     private CommonDanmakuType type;
+    private long lifespan;
     private boolean showName;
     private UUID sender;
     private String senderDisplayName;
