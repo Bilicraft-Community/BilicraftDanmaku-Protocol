@@ -6,7 +6,7 @@
 
     <groupId>com.bilicraft</groupId>
     <artifactId>BilicraftDanmaku-Protocol</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -32,12 +32,12 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <relocations>
-                                <relocation>
-                                    <pattern>com.google.code.gson.</pattern>
-                                    <shadedPattern>com.bilicraft.bilicraftdanmaku.shade.com.google.code.gson.</shadedPattern>
-                                </relocation>
-                            </relocations>
+<!--                            <relocations>-->
+<!--                                <relocation>-->
+<!--                                    <pattern>com.google.code.gson.</pattern>-->
+<!--                                    <shadedPattern>com.bilicraft.bilicraftdanmaku.shade.com.google.code.gson.</shadedPattern>-->
+<!--                                </relocation>-->
+<!--                            </relocations>-->
                         </configuration>
                     </execution>
                 </executions>
@@ -72,7 +72,7 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.7</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
